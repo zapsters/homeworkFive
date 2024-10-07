@@ -3,7 +3,7 @@ import * as MODEL from "../model/model.js";
 function navListeners() {
   $("nav .account a").on("click", function (e) {
     e.preventDefault();
-    console.log(e.currentTarget.id);
+    console.log($(e.currentTarget).attr("href"));
   });
   $("nav .hamburgerMenu").on("click", function (e) {
     console.log($("nav .mobileClickables").css("transform"));
