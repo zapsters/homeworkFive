@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 466.67 244.44">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 22.22px;
+      }
+    </style>
+  </defs>
+  <g id="emoji">
+    <g id="line">
+      <line class="cls-1" x1="11.11" y1="11.11" x2="455.56" y2="11.11"/>
+      <line class="cls-1" x1="11.11" y1="122.22" x2="455.56" y2="122.22"/>
+      <line class="cls-1" x1="11.11" y1="233.33" x2="455.56" y2="233.33"/>
+    </g>
+  </g>
+</svg>

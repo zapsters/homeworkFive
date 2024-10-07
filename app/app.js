@@ -5,6 +5,20 @@ function navListeners() {
     e.preventDefault();
     console.log(e.currentTarget.id);
   });
+  $("nav .hamburgerMenu").on("click", function (e) {
+    console.log($("nav .mobileClickables").css("transform"));
+    if (
+      $("nav .mobileClickables").css("transform") ==
+      "matrix(1, 0, 0, 0, 0, 248)"
+    ) {
+      $("nav .mobileClickables").css(
+        "transform",
+        "translateY(100%) scaleY(100%)"
+      );
+    } else {
+      $("nav .mobileClickables").css("transform", "translateY(100%) scaleY(0)");
+    }
+  });
 }
 
 function initURLListener() {

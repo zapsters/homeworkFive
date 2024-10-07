@@ -1,3 +1,12 @@
 $site-white: #ffffff;
 $site-blue: #587c83;
 $site-black: #000000;
+
+$breakpoint-tablet: 768px;
+$breakpoint-mobile: 390px;
+
+/* Tablet Breakpoint MediaQuery */
+// @media (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet) {}
+
+/* Mobile Breakpoint MediaQuery */
+// @media (max-width: $breakpoint-mobile) {}
