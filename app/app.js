@@ -22,7 +22,14 @@ function navListeners() {
 }
 
 function initURLListener() {
-  $(window).on("hashchange", MODEL.changeRoute);
+  $(window).on("hashchange", function (e) {
+    MODEL.changeRoute();
+    $("nav .links a").each(function (e) {
+      $(this).removeClass("active");
+      if ($(this).attr("href") == window.location.hash)
+        $(this).addClass("active");
+    });
+  });
   MODEL.changeRoute();
   navListeners();
 }
