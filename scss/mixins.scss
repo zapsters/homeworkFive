@@ -1,0 +1,20 @@
+@mixin btn-add-to-cart {
+  all: unset;
+  margin: 0;
+  list-style: none;
+  max-width: 222px;
+  height: 68px;
+  width: 100%;
+  font-size: 16px;
+  margin: 0 auto;
+  background-color: none;
+  cursor: pointer;
+  border: 1px solid $site-black;
+  width: calc(100% - 2px);
+  &:hover {
+    background-color: rgb(226, 223, 223);
+  }
+  &:active {
+    background-color: rgb(192, 188, 188);
+  }
+}

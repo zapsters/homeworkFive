@@ -1,8 +1,13 @@
 body {
   display: flex;
   align-items: stretch;
-  flex-shrink: no;
+  flex-shrink: none;
   flex-direction: column;
+  nav,
+  footer,
+  #app {
+    flex-shrink: 0;
+  }
 }
 #app {
   flex: 1;
