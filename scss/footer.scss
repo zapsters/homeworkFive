@@ -59,7 +59,7 @@ footer {
     background-image: url(../assets/logos/white/twitter_w.png);
   }
 }
-@media (max-width: 768px) {
+@media (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet) {
   footer {
     flex-direction: row;
     height: 92px;
@@ -93,11 +93,12 @@ footer {
     }
   }
 }
-@media (max-width: 390px) {
+@media (max-width: $breakpoint-mobile) {
   footer {
     flex-direction: row;
     height: 92px;
     padding: 0 20px;
+    background-color: red !important;
   }
 
   .flinks {
