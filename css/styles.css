@@ -2,28 +2,352 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Segoe UI";
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin-bottom: 16px;
 }
 
+/* Tablet Breakpoint MediaQuery */
+/* Mobile Breakpoint MediaQuery */
 @font-face {
-  font-family: seoReg;
-  src: url(../css/fonts/segoeui.ttf);
+  font-family: "Segoe UI";
+  src: url(../css/fonts/segoeuil.ttf);
+  font-weight: 200;
+  font-style: normal;
 }
+@font-face {
+  font-family: "Segoe UI";
+  src: url(../css/fonts/seguili.ttf);
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Segoe UI";
+  src: url(../css/fonts/segoeuisl.ttf);
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Segoe UI";
+  src: url(../css/fonts/seguisli.ttf);
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Segoe UI";
+  src: url(../css/fonts/segoeui.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Segoe UI";
+  src: url(../css/fonts/segoeuii.ttf);
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Segoe UI";
+  src: url(../css/fonts/seguisb.ttf);
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Segoe UI";
+  src: url(../css/fonts/seguisbi.ttf);
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Segoe UI";
+  src: url(../css/fonts/segoeuib.ttf);
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Segoe UI";
+  src: url(../css/fonts/segoeuiz.ttf);
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Segoe UI";
+  src: url(../css/fonts/seguibl.ttf);
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Segoe UI";
+  src: url(../css/fonts/seguibli.ttf);
+  font-weight: 900;
+  font-style: italic;
+}
+body {
+  display: flex;
+  align-items: stretch;
+  flex-shrink: no;
+  flex-direction: column;
+}
+
+#app {
+  flex: 1;
+}
+
 nav {
+  padding-top: 22px;
   height: 107px;
   border-bottom: 2px solid #000000;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  font-family: "Segoe UI";
+  padding: 22px 13px 0 13px;
+  position: relative;
+}
+nav a {
+  font-size: 16px;
+  color: #000000;
+  text-decoration: none;
+}
+nav .active {
+  font-weight: 700;
+}
+nav .logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8vw;
+}
+nav .logo img {
+  height: 73px;
+  width: 73px;
+}
+nav .logo p {
+  transform: translateY(14px);
+}
+nav .search {
+  max-width: 30%;
+  margin: 10px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .search .input {
+  height: 44px;
+  width: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+nav .search .input input {
+  max-width: 604px;
+  border: 0;
+  background-color: #c4d0d3;
+  opacity: 100%;
+  color: #6b7274;
+  height: 100%;
+  width: 100%;
+  padding-left: 42px;
+}
+nav .search .input img {
+  opacity: 45%;
+  padding: 8px 0 11px 9px;
+  height: 44px;
+  position: absolute;
+  left: 0;
+}
+nav .clickables {
+  transform: none;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  flex: 0.5;
+}
+nav .clickables .links {
+  gap: 10px;
+  display: flex;
+  align-items: center;
   justify-content: space-evenly;
+  flex: 1;
+  margin-right: 2.7vw;
+}
+nav .clickables .links a:hover {
+  text-decoration: underline;
+}
+nav .clickables .account a:hover {
+  text-decoration: underline;
+}
+nav .clickables .account {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.8vw;
+}
+nav .clickables .account a {
+  padding-right: 60px;
+  color: #000000;
+  vertical-align: middle;
+  position: relative;
+}
+nav .clickables .account a img {
+  transform: translateX(12px);
+  position: absolute;
+  top: -12px;
+  height: 47px;
+}
+nav .clickables .account a .cartImg {
+  padding-right: 0px;
+  transform: translateX(0px);
+}
+nav .mobileClickables {
+  display: none;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  z-index: 100;
+  bottom: 0;
+  flex-direction: column;
+  transform: translateY(100%) scaleY(0);
+  transition: transform 0.2s linear;
+  transform-origin: top;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 17px;
+  background-color: rgba(0, 0, 0, 0.142);
+}
+nav .mobileClickables .links a:hover {
+  text-decoration: underline;
+}
+nav .mobileClickables .account a:hover {
+  text-decoration: underline;
+}
+nav .mobileClickables .links {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 10px;
+  flex-direction: column;
+  margin-bottom: 17px;
+}
+nav .mobileClickables .account {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-top: 1px solid black;
+  width: 60%;
+  flex-direction: column;
+  padding-top: 10px;
+}
+nav .mobileClickables .account a {
+  margin-bottom: 10px;
+}
+nav .mobileClickables .account a img {
+  position: relative;
+  top: 8px;
+  height: 30px;
+}
+nav .hamburgerMenu {
+  display: none;
+}
+nav .hamburgerMenu img {
+  cursor: pointer;
+  height: 27px;
 }
 
+/* Tablet Breakpoint MediaQuery */
+@media (min-width: 390px) and (max-width: 768px) {
+  nav {
+    padding: 22px 2.5vw 0 2.5vw;
+    position: relative;
+  }
+  nav .logo img {
+    height: 45px;
+    width: 45px;
+  }
+  nav .clickables {
+    display: none;
+  }
+  nav .mobileClickables {
+    display: flex;
+    opacity: 1;
+  }
+  nav .search {
+    max-width: 39%;
+  }
+  nav .search .input {
+    max-height: 23px !important;
+  }
+  nav .search .input input {
+    padding-left: 23px;
+    font-size: 15px;
+  }
+  nav .search .input img {
+    height: 36px;
+    margin-left: -7px;
+    transform: translateY(1px);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  nav .hamburgerMenu {
+    display: block;
+  }
+}
+/* Mobile Breakpoint MediaQuery */
+@media (max-width: 390px) {
+  nav {
+    padding: 22px 2.5vw 0 2.5vw;
+  }
+  nav .logo img {
+    height: 30px;
+    width: 30px;
+  }
+  nav .search {
+    height: 23px;
+  }
+  nav .search .input {
+    max-height: 16px !important;
+  }
+  nav .search .input input {
+    padding-left: 17px;
+    font-size: 10px;
+  }
+  nav .search .input img {
+    height: 30px;
+    margin-left: -7px;
+    transform: translateY(1px);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  nav .clickables {
+    display: none;
+  }
+  nav .search {
+    max-width: unset;
+    max-width: 39%;
+  }
+  nav .hamburgerMenu {
+    display: block;
+  }
+}
 footer {
   display: flex;
   justify-content: space-between;
@@ -31,7 +355,7 @@ footer {
   width: 100%;
   height: 92px;
   background-color: #587c83;
-  font-family: seoReg;
+  font-family: Segoe UI;
   padding: 0 20px;
 }
 
@@ -140,4 +464,49 @@ footer {
     background-size: cover;
     background-repeat: no-repeat;
   }
+}
+.home {
+  margin-top: 158px;
+}
+.home .hero {
+  width: 90%;
+  max-width: 1500px;
+  aspect-ratio: 1500/530;
+  background-image: url("../assets/home-hero.jpg");
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-right: 182px;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  color: #ffffff;
+  position: relative;
+}
+.home .hero .overlay {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #8fa5a9;
+  opacity: 60%;
+  color: white;
+  position: absolute;
+  z-index: 0;
+}
+.home .hero .text {
+  z-index: 10;
+}
+.home .hero .text h3 {
+  line-height: 1em;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+.home .hero .text p {
+  padding-left: 5px;
+  font-size: 16px;
+  font-weight: 400;
 }
