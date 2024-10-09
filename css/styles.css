@@ -141,10 +141,11 @@ nav .logo img {
 }
 nav .logo p {
   transform: translateY(14px);
+  font-size: 16px;
 }
 nav .search {
   max-width: 30%;
-  margin: 10px;
+  margin: min(1vw, 10px);
   flex: 1;
   display: flex;
   align-items: center;
@@ -273,7 +274,7 @@ nav .hamburgerMenu {
 }
 nav .hamburgerMenu img {
   cursor: pointer;
-  height: 27px;
+  height: 20px;
 }
 
 /* Tablet Breakpoint MediaQuery */
@@ -281,6 +282,13 @@ nav .hamburgerMenu img {
   nav {
     padding: 22px 2.5vw 0 2.5vw;
     position: relative;
+  }
+  nav .hamburgerMenu {
+    display: none;
+  }
+  nav .hamburgerMenu img {
+    cursor: pointer;
+    height: 20px;
   }
   nav .logo img {
     height: 45px;
@@ -324,6 +332,9 @@ nav .hamburgerMenu img {
     height: 30px;
     width: 30px;
   }
+  nav .logo p {
+    font-size: 13px;
+  }
   nav .search {
     height: 23px;
   }
@@ -351,6 +362,10 @@ nav .hamburgerMenu img {
   }
   nav .hamburgerMenu {
     display: block;
+  }
+  nav .hamburgerMenu img {
+    cursor: pointer;
+    height: 13px;
   }
 }
 footer {
@@ -445,7 +460,6 @@ footer {
     flex-direction: row;
     height: 92px;
     padding: 0 20px;
-    background-color: red !important;
   }
   .flinks {
     max-width: none;
@@ -482,6 +496,7 @@ footer {
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  background-color: #587c83;
   padding-right: 182px;
   flex-direction: column;
   background-size: cover;
@@ -562,6 +577,7 @@ footer {
   margin: 0 auto;
   background-color: none;
   cursor: pointer;
+  text-align: center;
   border: 1px solid #000000;
   width: calc(100% - 2px);
 }
@@ -573,7 +589,32 @@ footer {
 }
 
 /* Tablet Breakpoint MediaQuery */
-@media (min-width: 390px) and (max-width: 768px) {
+@media (max-width: 768px) {
+  .home {
+    margin-top: 88px;
+  }
+  .home .hero {
+    background-size: 43%;
+    height: 329px;
+    max-width: 552px;
+    padding-right: 15%;
+    background-position: 25%;
+    background-repeat: no-repeat;
+  }
+  .home .hero .overlay {
+    opacity: 0%;
+  }
+  .home .hero .text h3 {
+    line-height: 1em;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 22px;
+  }
+  .home .hero .text p {
+    padding-left: 0px;
+    font-size: 7px;
+    font-weight: 400;
+  }
   .home .bookShowcase {
     flex-direction: column;
   }
@@ -594,6 +635,27 @@ footer {
 }
 /* Mobile Breakpoint MediaQuery */
 @media (max-width: 390px) {
+  .home {
+    margin-top: 55px;
+  }
+  .home .hero {
+    background-size: 40%;
+    padding-right: 7%;
+    background-position: 29px;
+    background-repeat: no-repeat;
+    height: 193px;
+  }
+  .home .hero .text h3 {
+    line-height: 1em;
+    font-size: 6px;
+    font-weight: 700;
+    margin-bottom: 22px;
+  }
+  .home .hero .text p {
+    padding-left: 0px;
+    font-size: 6px;
+    font-weight: 400;
+  }
   .home .bookShowcase {
     flex-direction: column;
   }
@@ -835,5 +897,154 @@ footer {
   .about .aboutSecTwo .aboutText2 .aboutPg2 {
     font-size: 6px;
     font-weight: bold;
+  }
+}
+
+.books {
+  margin-top: 180px;
+}
+.books p.title {
+  font-size: 26px;
+  font-weight: bold;
+  padding: 0 2.5vw;
+}
+.books .bookShowcase:last-of-type {
+  margin-bottom: 200px;
+}
+.books .bookShowcase {
+  display: flex;
+  padding: 0 2.5vw;
+  align-items: center;
+  justify-content: space-evenly;
+  column-gap: 2.5vw;
+  row-gap: 90px;
+  margin-bottom: 300px;
+  flex-wrap: wrap;
+}
+.books .bookShowcase .bookItem {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 7%;
+  flex: 29.4vw;
+}
+.books .bookShowcase .bookItem .cover {
+  max-width: 206px;
+  min-width: 100px;
+  flex: 1;
+  aspect-ratio: 223/315;
+  background-image: url("../assets/finding me.jpg");
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+.books .bookShowcase .bookItem .details {
+  flex: 1;
+}
+.books .bookShowcase .bookItem .details .description {
+  font-size: 16px;
+  margin-bottom: 46px;
+}
+.books .bookShowcase .bookItem .details .price {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 68px;
+}
+.books .bookShowcase .bookItem .details .addToCartBtn {
+  all: unset;
+  margin: 0;
+  list-style: none;
+  max-width: 222px;
+  height: 68px;
+  width: 100%;
+  font-size: 16px;
+  margin: 0 auto;
+  background-color: none;
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid #000000;
+  width: calc(100% - 2px);
+}
+.books .bookShowcase .bookItem .details .addToCartBtn:hover {
+  background-color: rgb(226, 223, 223);
+}
+.books .bookShowcase .bookItem .details .addToCartBtn:active {
+  background-color: rgb(192, 188, 188);
+}
+
+/* Tablet Breakpoint MediaQuery */
+@media (max-width: 768px) {
+  .books {
+    margin-top: 85px;
+  }
+  .books p.title {
+    font-size: 12px;
+    padding-left: 45px;
+  }
+  .books .bookShowcase {
+    margin-bottom: 63.5px;
+    row-gap: 63px;
+  }
+  .books .bookShowcase .bookItem {
+    flex: 100%;
+    gap: 26px;
+  }
+  .books .bookShowcase .bookItem .cover {
+    max-width: 81px;
+    min-width: unset;
+  }
+  .books .bookShowcase .bookItem .details {
+    max-width: 183px;
+  }
+  .books .bookShowcase .bookItem .details .description {
+    font-size: 11px;
+    margin-bottom: 16px;
+  }
+  .books .bookShowcase .bookItem .details .price {
+    font-size: 12px;
+    margin-bottom: 16px;
+  }
+  .books .bookShowcase .bookItem .details .addToCartBtn {
+    max-width: 126px !important;
+    height: 37.5px !important;
+    font-size: 11px !important;
+  }
+}
+/* Mobile Breakpoint MediaQuery */
+@media (max-width: 390px) {
+  .books {
+    margin-top: 49px;
+  }
+  .books p.title {
+    font-size: 6px;
+    padding-left: 32px;
+  }
+  .books .bookShowcase {
+    margin-bottom: 63.5px;
+    row-gap: 131px;
+  }
+  .books .bookShowcase .bookItem {
+    flex: 100%;
+    gap: min(10vw - 20px, 26px);
+  }
+  .books .bookShowcase .bookItem .cover {
+    max-width: 53px;
+    min-width: unset;
+  }
+  .books .bookShowcase .bookItem .details {
+    max-width: 102px;
+  }
+  .books .bookShowcase .bookItem .details .description {
+    font-size: 6px;
+    margin-bottom: 11px;
+  }
+  .books .bookShowcase .bookItem .details .price {
+    font-size: 6px;
+    margin-bottom: 11px;
+  }
+  .books .bookShowcase .bookItem .details .addToCartBtn {
+    max-width: 72px !important;
+    height: 23px !important;
+    font-size: 6px !important;
   }
 }

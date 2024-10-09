@@ -1,0 +1,131 @@
+.books {
+  margin-top: 180px;
+  p.title {
+    font-size: 26px;
+    font-weight: bold;
+    padding: 0 2.5vw;
+  }
+  .bookShowcase:last-of-type {
+    margin-bottom: 200px;
+  }
+  .bookShowcase {
+    display: flex;
+    padding: 0 2.5vw;
+    align-items: center;
+    justify-content: space-evenly;
+    column-gap: 2.5vw;
+    row-gap: 90px;
+    margin-bottom: 300px;
+    flex-wrap: wrap;
+    .bookItem {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 7%;
+      flex: 29.4vw;
+      .cover {
+        max-width: 206px;
+        min-width: 100px;
+        flex: 1;
+        aspect-ratio: 223 / 315;
+        background-image: url("../assets/finding\ me.jpg");
+        background-size: contain;
+        background-position: left;
+        background-repeat: no-repeat;
+      }
+      .details {
+        flex: 1;
+        .description {
+          font-size: 16px;
+          margin-bottom: 46px;
+        }
+        .price {
+          font-size: 16px;
+          font-weight: 700;
+          margin-bottom: 68px;
+        }
+        .addToCartBtn {
+          @include btn-add-to-cart;
+        }
+      }
+    }
+  }
+}
+
+/* Tablet Breakpoint MediaQuery */
+@media (max-width: $breakpoint-tablet) {
+  .books {
+    margin-top: 85px;
+    p.title {
+      font-size: 12px;
+      padding-left: 45px;
+    }
+    .bookShowcase {
+      margin-bottom: 63.5px;
+      row-gap: 63px;
+      .bookItem {
+        flex: 100%;
+        gap: 26px;
+        .cover {
+          max-width: 81px;
+          min-width: unset;
+        }
+        .details {
+          max-width: 183px;
+          .description {
+            font-size: 11px;
+            margin-bottom: 16px;
+          }
+          .price {
+            font-size: 12px;
+            margin-bottom: 16px;
+          }
+          .addToCartBtn {
+            max-width: 126px !important;
+            height: 37.5px !important;
+            font-size: 11px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Mobile Breakpoint MediaQuery */
+@media (max-width: $breakpoint-mobile) {
+  .books {
+    margin-top: 49px;
+    p.title {
+      font-size: 6px;
+      padding-left: 32px;
+    }
+    .bookShowcase {
+      margin-bottom: 63.5px;
+      row-gap: 131px;
+      .bookItem {
+        flex: 100%;
+        gap: min(10vw - 20px, 26px);
+        .cover {
+          max-width: 53px;
+          min-width: unset;
+        }
+        .details {
+          max-width: 102px;
+          .description {
+            font-size: 6px;
+            margin-bottom: 11px;
+          }
+          .price {
+            font-size: 6px;
+            margin-bottom: 11px;
+          }
+          .addToCartBtn {
+            max-width: 72px !important;
+            height: 23px !important;
+            font-size: 6px !important;
+          }
+        }
+      }
+    }
+  }
+}

@@ -27,11 +27,12 @@ nav {
     }
     p {
       transform: translateY(14px);
+      font-size: 16px;
     }
   }
   .search {
     max-width: 30%;
-    margin: 10px;
+    margin: min(1vw, 10px);
     flex: 1;
     display: flex;
     align-items: center;
@@ -161,7 +162,7 @@ nav {
     display: none;
     img {
       cursor: pointer;
-      height: 27px;
+      height: 20px;
     }
   }
 }
@@ -170,6 +171,14 @@ nav {
   nav {
     padding: 22px 2.5vw 0 2.5vw;
     position: relative;
+
+    .hamburgerMenu {
+      display: none;
+      img {
+        cursor: pointer;
+        height: 20px;
+      }
+    }
     .logo {
       img {
         height: 45px;
@@ -216,6 +225,9 @@ nav {
         height: 30px;
         width: 30px;
       }
+      p {
+        font-size: 13px;
+      }
     }
     .search {
       height: 23px;
@@ -242,8 +254,13 @@ nav {
       max-width: unset;
       max-width: 39%;
     }
+
     .hamburgerMenu {
       display: block;
+      img {
+        cursor: pointer;
+        height: 13px;
+      }
     }
   }
 }

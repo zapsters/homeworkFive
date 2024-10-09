@@ -8,10 +8,7 @@ function navListeners() {
   $("nav .hamburgerMenu").on("click", function (e) {
     console.log($("nav .mobileClickables").css("transform"));
     if ($("nav .mobileClickables").css("transform")[16] == "0") {
-      $("nav .mobileClickables").css(
-        "transform",
-        "translateY(100%) scaleY(100%)"
-      );
+      $("nav .mobileClickables").css("transform", "translateY(100%) scaleY(100%)");
     } else {
       $("nav .mobileClickables").css("transform", "translateY(100%) scaleY(0)");
     }
@@ -23,11 +20,14 @@ function initURLListener() {
     MODEL.changeRoute();
     $("nav .links a").each(function (e) {
       $(this).removeClass("active");
-      if ($(this).attr("href") == window.location.hash)
-        $(this).addClass("active");
+      if ($(this).attr("href") == window.location.hash) $(this).addClass("active");
     });
   });
   MODEL.changeRoute();
+  $("nav .links a").each(function (e) {
+    $(this).removeClass("active");
+    if ($(this).attr("href") == window.location.hash) $(this).addClass("active");
+  });
   navListeners();
 }
 
