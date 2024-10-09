@@ -8,6 +8,7 @@
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    background-color: $site-blue;
     padding-right: 182px;
     flex-direction: column;
     background-size: cover;
@@ -85,8 +86,33 @@
 }
 
 /* Tablet Breakpoint MediaQuery */
-@media (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet) {
+@media (max-width: $breakpoint-tablet) {
   .home {
+    margin-top: 88px;
+    .hero {
+      background-size: 43%;
+      height: 329px;
+      max-width: 552px;
+      padding-right: 15%;
+      background-position: 25%;
+      background-repeat: no-repeat;
+      .overlay {
+        opacity: 0%;
+      }
+      .text {
+        h3 {
+          line-height: 1em;
+          font-size: 12px;
+          font-weight: 700;
+          margin-bottom: 22px;
+        }
+        p {
+          padding-left: 0px;
+          font-size: 7px;
+          font-weight: 400;
+        }
+      }
+    }
     .bookShowcase {
       flex-direction: column;
       .bookItem {
@@ -112,6 +138,27 @@
 /* Mobile Breakpoint MediaQuery */
 @media (max-width: $breakpoint-mobile) {
   .home {
+    margin-top: 55px;
+    .hero {
+      background-size: 40%;
+      padding-right: 7%;
+      background-position: 29px;
+      background-repeat: no-repeat;
+      height: 193px;
+      .text {
+        h3 {
+          line-height: 1em;
+          font-size: 6px;
+          font-weight: 700;
+          margin-bottom: 22px;
+        }
+        p {
+          padding-left: 0px;
+          font-size: 6px;
+          font-weight: 400;
+        }
+      }
+    }
     .bookShowcase {
       flex-direction: column;
       .bookItem {
