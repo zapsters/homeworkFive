@@ -1,6 +1,8 @@
 .account {
   margin-top: 188px;
   display: flex;
+  row-gap: 80px;
+  margin-bottom: 70px;
   .form {
     flex: 100%;
     display: flex;
@@ -8,10 +10,19 @@
     justify-content: space-evenly;
 
     form {
+      width: 100%;
       display: flex;
       align-items: stretch;
       flex-direction: column;
       max-width: 232px;
+      p {
+        text-align: center;
+        margin: 0;
+        line-height: 0;
+        transform: translateY(15px);
+        color: rgb(16, 150, 16);
+        text-shadow: 0px 0px 1px black;
+      }
       h2 {
         margin-bottom: 43px;
         font-size: 26px;
@@ -26,7 +37,8 @@
         border-bottom: 1px solid $site-black;
         background-color: transparent;
         color: black;
-        width: 233px;
+        width: 100%;
+        max-width: 233px;
         margin-bottom: 43px;
       }
       button {
@@ -49,4 +61,74 @@
 ::placeholder {
   color: inherit;
   opacity: 1; /* Firefox */
+}
+
+/* Tablet Breakpoint MediaQuery */
+@media (max-width: $breakpoint-tablet) {
+  .account {
+    margin-top: 95px;
+    flex-direction: column;
+    .form {
+      form {
+        max-width: 233px;
+        span {
+          font-size: 11px;
+          margin-bottom: 16px;
+        }
+        h2 {
+          margin-bottom: 52px;
+          font-size: 12px;
+          font-weight: 400;
+        }
+        input {
+          font-size: 11px;
+          margin-bottom: 55px;
+        }
+        input:last-of-type {
+          margin-bottom: 30px;
+        }
+
+        button {
+          max-width: 112px;
+          height: 37px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+/* Mobile Breakpoint MediaQuery */
+@media (max-width: $breakpoint-mobile) {
+  .account {
+    margin-top: 95px;
+    flex-direction: column;
+    .form {
+      form {
+        max-width: 138px;
+        span {
+          font-size: 6px;
+          margin-bottom: 11px;
+        }
+        h2 {
+          margin-bottom: 23px;
+          font-size: 6px;
+          font-weight: 400;
+        }
+        input {
+          font-size: 6px;
+          margin-bottom: 47px;
+        }
+        input:last-of-type {
+          margin-bottom: 40px;
+        }
+
+        button {
+          max-width: 68px;
+          height: 25px;
+          font-size: 6px;
+        }
+      }
+    }
+  }
 }
