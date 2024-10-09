@@ -226,3 +226,83 @@
     }
   }
 }
+@media (max-width: 390px) {
+  .blog {
+    height: 844px;
+    .section1 {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      max-width: 318px;
+      height: 229px;
+      align-items: flex-start;
+      justify-content: center;
+      background-color: $site-blue;
+      margin: 0 auto;
+      margin-top: 170px;
+      gap: 0;
+
+      .book1 {
+        flex: 1;
+        margin-top: 42px;
+        background-image: url(../assets/becoming.jpg);
+        max-width: 96px;
+        aspect-ratio: 96 / 146;
+        background-color: pink;
+      }
+      .details {
+        color: white;
+        max-height: 84px;
+        width: 146px;
+        text-align: center;
+        font-family: Segoe UI;
+        align-self: center;
+        .header1 {
+          margin-bottom: 22px;
+          font-size: 5px;
+          font-weight: bold;
+        }
+        .pg1 {
+          margin-bottom: 14px;
+          font-size: 6px;
+          width: 146px;
+          justify-self: center;
+          align-self: center;
+        }
+        .readMoreButton {
+          @include btn-add-to-cart;
+          width: 50%;
+          height: 34px;
+          font-size: 12px;
+          border-color: white;
+        }
+      }
+    }
+
+    .section2 {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      max-width: 1464px;
+      height: 463px;
+      align-items: flex-start;
+      justify-content: center;
+      background-color: $site-blue;
+      margin: 0 auto;
+      margin-top: 170px;
+    }
+
+    .section3 {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      max-width: 1464px;
+      height: 463px;
+      align-items: flex-start;
+      justify-content: center;
+      background-color: $site-blue;
+      margin: 0 auto;
+      margin-top: 170px;
+    }
+  }
+}
