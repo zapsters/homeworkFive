@@ -26,7 +26,7 @@ function initURLListener() {
 }
 
 function updateActiveLinkInNav() {
-  $("nav .clickables a").each(function (e) {
+  $("nav a").each(function (e) {
     $(this).removeClass("active");
     if ($(this).attr("href") == window.location.hash) $(this).addClass("active");
   });

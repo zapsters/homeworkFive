@@ -1,3 +1,4 @@
+let userLoggedIn = false;
 let bookList = [
   {
     cover: "../assets/to-kill-a-mockingbird.jpg",
@@ -88,6 +89,9 @@ let bookList = [
   },
 ];
 
+export function onSignIn() {
+  userLoggedIn = true;
+}
 export function changeRoute() {
   let hashTag = window.location.hash;
   let pageID = hashTag.replace("#", "");
@@ -119,6 +123,11 @@ export function changeRoute() {
             } else if (bookItem.childrensBook) {
               $("#childrensBooks").append(createBookElement(bookItem));
             }
+          });
+          break;
+        case "account":
+          $("#loginBtn").on("click", function (e) {
+            onSignIn();
           });
           break;
 

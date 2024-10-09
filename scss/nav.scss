@@ -167,7 +167,7 @@ nav {
   }
 }
 /* Tablet Breakpoint MediaQuery */
-@media (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet) {
+@media (max-width: $breakpoint-tablet) {
   nav {
     padding: 22px 2.5vw 0 2.5vw;
     position: relative;
