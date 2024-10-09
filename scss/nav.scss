@@ -82,10 +82,10 @@ nav {
     .links a:hover {
       text-decoration: underline;
     }
-    .account a:hover {
+    .navAccountButtons a:hover {
       text-decoration: underline;
     }
-    .account {
+    .navAccountButtons {
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -129,7 +129,7 @@ nav {
     .links a:hover {
       text-decoration: underline;
     }
-    .account a:hover {
+    .navAccountButtons a:hover {
       text-decoration: underline;
     }
     .links {
@@ -140,7 +140,7 @@ nav {
       flex-direction: column;
       margin-bottom: 17px;
     }
-    .account {
+    .navAccountButtons {
       display: flex;
       align-items: center;
       justify-content: space-evenly;
