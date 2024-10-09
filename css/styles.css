@@ -825,6 +825,7 @@ footer {
   }
   .books .bookShowcase {
     margin-bottom: 63.5px;
+    row-gap: 63px;
   }
   .books .bookShowcase .bookItem {
     flex: 100%;
@@ -862,6 +863,7 @@ footer {
   }
   .books .bookShowcase {
     margin-bottom: 63.5px;
+    row-gap: 131px;
   }
   .books .bookShowcase .bookItem {
     flex: 100%;

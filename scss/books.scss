@@ -62,6 +62,7 @@
     }
     .bookShowcase {
       margin-bottom: 63.5px;
+      row-gap: 63px;
       .bookItem {
         flex: 100%;
         gap: 26px;
@@ -100,6 +101,7 @@
     }
     .bookShowcase {
       margin-bottom: 63.5px;
+      row-gap: 131px;
       .bookItem {
         flex: 100%;
         gap: min(10vw - 20px, 26px);
