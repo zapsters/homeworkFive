@@ -1,82 +1,229 @@
-.about{
-    height: 2000px;
-   
-    .aboutSecOne{
-        display: flex;
+.about {
+  height: 2095px;
+  width: 100%;
 
-
-.aboutImageOne{
-    background-image: url(../assets/about-photo.jpg);
-    width: 393px;
-    height: 587px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 213px;
-    margin-left: 201px;
-    
-}
-.aboutText{
-.aboutTitle{
-    font-size: 20px;
-    font-family: Segoe UI;
-    width: 372px;
-    height: 43px;
+  .aboutSecOne {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 90%;
+    gap: 40px;
+    margin: 0 auto;
     margin-top: 170px;
-    margin-left: 200px;
-
-}
-.aboutFounder{
-    font-size: 16px;
-    font-family: Segoe UI;
-    margin-top: 40px;
-    margin-left: 280px;
-    margin-bottom: 61px;
-    
-
-}
-.aboutPg{
-    margin-left: 40px;
-    width: 800px;
-    height:170px;
-    font-size: 13px;
-    font-weight: bold;
-}
-}
+    .aboutImageOne {
+      flex: 1;
+      margin-top: 43px;
+      background-image: url(../assets/about-photo.jpg);
+      max-width: 393px;
+      aspect-ratio: 393 / 587;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border: solid 1px #707070;
     }
-.aboutSecTwo{
-   display: flex;
-
-.aboutImageTwo{
-    background-image: url(../assets/about-photo-two.jpg);
-    width: 393px;
-    height: 587px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: 213px;
-    margin-left: 201px;
-    
-}
-.aboutText2{
-.aboutTitle2{
-    font-size: 20px;
-    font-family: Segoe UI;
-    width: 372px;
-    height: 43px;
+    .aboutText {
+      max-width: 800px;
+      flex: 1;
+      min-width: auto;
+      .aboutTitle {
+        font-size: 20px;
+        text-align: center;
+        font-family: Segoe UI;
+        max-width: auto;
+      }
+      .aboutFounder {
+        text-align: center;
+        font-size: 16px;
+        font-family: Segoe UI;
+        margin-top: 40px;
+      }
+      .aboutPg {
+        font-size: 13px;
+        font-weight: bold;
+      }
+    }
+  }
+  .aboutSecTwo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 90%;
+    gap: 40px;
+    margin: 0 auto;
     margin-top: 170px;
-    margin-left: 200px;
-
+    .aboutImageTwo {
+      flex: 1;
+      margin-top: 43px;
+      background-image: url(../assets/about-photo-two.jpg);
+      max-width: 393px;
+      aspect-ratio: 393 / 587;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border: solid 1px #707070;
+    }
+    .aboutText2 {
+      max-width: 800px;
+      flex: 1;
+      min-width: auto;
+      .aboutTitle2 {
+        font-size: 20px;
+        text-align: center;
+        font-family: Segoe UI;
+        max-width: auto;
+        margin-bottom: 61px;
+      }
+      .aboutPg2 {
+        font-size: 13px;
+        font-weight: bold;
+      }
+    }
+  }
 }
-
-.aboutPg2{
-    margin-left: 40px;
-    width: 800px;
-    height:170px;
-    font-size: 13px;
-    font-weight: bold;
-    margin-top: 61px;
+@media (max-width: 769px) {
+  .about {
+    height: 1163px;
+    .aboutSecOne {
+      .aboutImageOne {
+        flex: 1;
+        margin-top: 43px;
+        background-image: url(../assets/about-photo.jpg);
+        max-width: 208px;
+        aspect-ratio: 208 / 343;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .aboutText {
+        max-width: 800px;
+        flex: 1;
+        min-width: auto;
+        .aboutTitle {
+          font-size: 12px;
+          text-align: center;
+          font-family: Segoe UI;
+          max-width: auto;
+        }
+        .aboutFounder {
+          text-align: center;
+          font-size: 8px;
+          font-family: Segoe UI;
+          margin-top: 40px;
+        }
+        .aboutPg {
+          font-size: 11px;
+          font-weight: bold;
+        }
+      }
+    }
+    .aboutSecTwo {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      max-width: 90%;
+      gap: 40px;
+      margin: 0 auto;
+      margin-top: 170px;
+      .aboutImageTwo {
+        flex: 1;
+        margin-top: 43px;
+        background-image: url(../assets/about-photo-two.jpg);
+        max-width: 208px;
+        aspect-ratio: 208 / 343;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .aboutText2 {
+        max-width: 800px;
+        flex: 1;
+        min-width: auto;
+        .aboutTitle2 {
+          font-size: 12px;
+          text-align: center;
+          font-family: Segoe UI;
+          max-width: auto;
+          margin-bottom: 61px;
+        }
+        .aboutPg2 {
+          font-size: 11px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
 }
-}
-}
+@media (max-width: 390px) {
+  .about {
+    height: 844px;
+    .aboutSecOne {
+      .aboutImageOne {
+        flex: 1;
+        margin-top: 43px;
+        background-image: url(../assets/about-photo.jpg);
+        max-width: 208px;
+        aspect-ratio: 208 / 343;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .aboutText {
+        max-width: 800px;
+        flex: 1;
+        min-width: auto;
+        .aboutTitle {
+          font-size: 6px;
+          text-align: center;
+          font-family: Segoe UI;
+          max-width: auto;
+        }
+        .aboutFounder {
+          text-align: center;
+          font-size: 6px;
+          font-family: Segoe UI;
+          margin-top: 16px;
+        }
+        .aboutPg {
+          font-size: 6px;
+          font-weight: bold;
+        }
+      }
+    }
+    .aboutSecTwo {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      max-width: 90%;
+      gap: 40px;
+      margin: 0 auto;
+      margin-top: 170px;
+      .aboutImageTwo {
+        flex: 1;
+        background-image: url(../assets/about-photo-two.jpg);
+        max-width: 208px;
+        aspect-ratio: 208 / 343;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 8px;
+      }
+      .aboutText2 {
+        max-width: 800px;
+        flex: 1;
+        min-width: auto;
+        text-align: center;
+        .aboutTitle2 {
+          font-size: 6px;
+          text-align: center;
+          font-family: Segoe UI;
+          max-width: auto;
+          margin-bottom: 11px;
+        }
+        .aboutPg2 {
+          font-size: 6px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
 }
