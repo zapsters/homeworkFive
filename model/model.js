@@ -127,8 +127,7 @@ export function changeRoute() {
       }
     })
     .fail(function (e) {
-      alert(`${pageID} | ${e.status}: ${e.statusText}`);
-      $("#app").html(`${e.status}: ${e.statusText}`);
+      $("#app").html(`${pageID} | Error ${e.status}: ${e.statusText}`);
     });
 }
 
