@@ -195,28 +195,28 @@ nav .clickables .links {
 nav .clickables .links a:hover {
   text-decoration: underline;
 }
-nav .clickables .account a:hover {
+nav .clickables .navAccountButtons a:hover {
   text-decoration: underline;
 }
-nav .clickables .account {
+nav .clickables .navAccountButtons {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1.8vw;
 }
-nav .clickables .account a {
+nav .clickables .navAccountButtons a {
   padding-right: 60px;
   color: #000000;
   vertical-align: middle;
   position: relative;
 }
-nav .clickables .account a img {
+nav .clickables .navAccountButtons a img {
   transform: translateX(12px);
   position: absolute;
   top: -12px;
   height: 47px;
 }
-nav .clickables .account a .cartImg {
+nav .clickables .navAccountButtons a .cartImg {
   padding-right: 0px;
   transform: translateX(0px);
 }
@@ -241,7 +241,7 @@ nav .mobileClickables {
 nav .mobileClickables .links a:hover {
   text-decoration: underline;
 }
-nav .mobileClickables .account a:hover {
+nav .mobileClickables .navAccountButtons a:hover {
   text-decoration: underline;
 }
 nav .mobileClickables .links {
@@ -252,7 +252,7 @@ nav .mobileClickables .links {
   flex-direction: column;
   margin-bottom: 17px;
 }
-nav .mobileClickables .account {
+nav .mobileClickables .navAccountButtons {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -261,10 +261,10 @@ nav .mobileClickables .account {
   flex-direction: column;
   padding-top: 10px;
 }
-nav .mobileClickables .account a {
+nav .mobileClickables .navAccountButtons a {
   margin-bottom: 10px;
 }
-nav .mobileClickables .account a img {
+nav .mobileClickables .navAccountButtons a img {
   position: relative;
   top: 8px;
   height: 30px;
@@ -674,8 +674,59 @@ footer {
     font-size: 6px;
   }
 }
+.account {
+  margin-top: 188px;
+  display: flex;
+}
+.account .form {
+  flex: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.account .form form {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  max-width: 232px;
+}
+.account .form form h2 {
+  margin-bottom: 43px;
+  font-size: 26px;
+  font-weight: 400;
+}
+.account .form form span {
+  margin: 0 0 -2px 0;
+}
+.account .form form input {
+  border: 0;
+  border-bottom: 1px solid #000000;
+  background-color: transparent;
+  color: black;
+  width: 233px;
+  margin-bottom: 43px;
+}
+.account .form form button {
+  cursor: pointer;
+  width: 100%;
+  border: 0;
+  max-width: 170px;
+  margin: 0 auto;
+  height: 45px;
+  color: #ffffff;
+  font-size: 16px;
+  background-color: #587c83;
+}
+.account .form form button:active {
+  background-color: #2b535b;
+}
+
+::placeholder {
+  color: inherit;
+  opacity: 1; /* Firefox */
+}
+
 .about {
-  height: 2095px;
   width: 100%;
 }
 .about .aboutSecOne {
@@ -727,6 +778,7 @@ footer {
   gap: 40px;
   margin: 0 auto;
   margin-top: 170px;
+  margin-bottom: 291px;
 }
 .about .aboutSecTwo .aboutImageTwo {
   flex: 1;
