@@ -28,7 +28,11 @@ function initURLListener() {
 function updateActiveLinkInNav() {
   $("nav a").each(function (e) {
     $(this).removeClass("active");
-    if ($(this).attr("href") == window.location.hash) $(this).addClass("active");
+    if (
+      $(this).attr("href") == window.location.hash ||
+      ($(this).attr("href") == "#home" && window.location.hash == "")
+    )
+      $(this).addClass("active");
   });
 }
 
