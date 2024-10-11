@@ -140,6 +140,7 @@ nav .logo img {
   width: 73px;
 }
 nav .logo p {
+  font-weight: 400 !important;
   transform: translateY(14px);
   font-size: 16px;
 }
@@ -278,7 +279,7 @@ nav .hamburgerMenu img {
 }
 
 /* Tablet Breakpoint MediaQuery */
-@media (min-width: 390px) and (max-width: 768px) {
+@media (max-width: 768px) {
   nav {
     padding: 22px 2.5vw 0 2.5vw;
     position: relative;
@@ -677,6 +678,8 @@ footer {
 .account {
   margin-top: 188px;
   display: flex;
+  row-gap: 80px;
+  margin-bottom: 70px;
 }
 .account .form {
   flex: 100%;
@@ -685,10 +688,19 @@ footer {
   justify-content: space-evenly;
 }
 .account .form form {
+  width: 100%;
   display: flex;
   align-items: stretch;
   flex-direction: column;
   max-width: 232px;
+}
+.account .form form p {
+  text-align: center;
+  margin: 0;
+  height: 0;
+  transform: translateY(15px);
+  color: rgb(16, 150, 16);
+  text-shadow: 0px 0px 1px black;
 }
 .account .form form h2 {
   margin-bottom: 43px;
@@ -703,7 +715,8 @@ footer {
   border-bottom: 1px solid #000000;
   background-color: transparent;
   color: black;
-  width: 233px;
+  width: 100%;
+  max-width: 233px;
   margin-bottom: 43px;
 }
 .account .form form button {
@@ -726,6 +739,74 @@ footer {
   opacity: 1; /* Firefox */
 }
 
+/* Tablet Breakpoint MediaQuery */
+@media (max-width: 768px) {
+  .account {
+    margin-top: 95px;
+    flex-direction: column;
+  }
+  .account .form form {
+    max-width: 233px;
+  }
+  .account .form form p {
+    font-size: 11px;
+  }
+  .account .form form span {
+    font-size: 11px;
+    margin-bottom: 16px;
+  }
+  .account .form form h2 {
+    margin-bottom: 52px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .account .form form input {
+    font-size: 11px;
+    margin-bottom: 55px;
+  }
+  .account .form form input:last-of-type {
+    margin-bottom: 30px;
+  }
+  .account .form form button {
+    max-width: 112px;
+    height: 37px;
+    font-size: 12px;
+  }
+}
+/* Mobile Breakpoint MediaQuery */
+@media (max-width: 390px) {
+  .account {
+    margin-top: 95px;
+    flex-direction: column;
+  }
+  .account .form form {
+    max-width: 138px;
+  }
+  .account .form form p {
+    font-size: 6px;
+  }
+  .account .form form span {
+    font-size: 6px;
+    margin-bottom: 11px;
+  }
+  .account .form form h2 {
+    margin-bottom: 23px;
+    font-size: 6px;
+    font-weight: 400;
+  }
+  .account .form form input {
+    font-size: 6px;
+    margin-bottom: 47px;
+  }
+  .account .form form input:last-of-type {
+    margin-bottom: 40px;
+  }
+  .account .form form button {
+    max-width: 68px;
+    height: 25px;
+    font-size: 6px;
+  }
+}
 .about {
   width: 100%;
 }
