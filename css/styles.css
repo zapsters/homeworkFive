@@ -1954,25 +1954,29 @@ footer {
   font-size: 1rem;
 }
 .RM1 .bookSection1 {
-  width: 1464px;
-  height: 380px;
   display: flex;
   align-items: flex-start;
   margin: 0 auto;
   margin-top: 140px;
-  position: relative;
+  width: 100%;
+  max-width: 1464px;
+  padding: 10px;
 }
 .RM1 .bookSection1 .bookImg {
   background-image: url(../assets/becoming.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 70%;
+  width: 250px;
   height: 380px;
-  max-width: 250px;
+  padding: 10px;
+  flex-shrink: 0;
 }
 .RM1 .bookSection1 .info {
-  margin-left: 35px;
+  margin-left: 20px;
+  padding: 10px;
+  flex-grow: 1;
+  min-width: 0;
 }
 .RM1 .bookSection1 .info .bookTitle1 {
   font-size: 1.25rem;
@@ -1980,18 +1984,20 @@ footer {
   font-weight: bold;
 }
 .RM1 .bookSection1 .info .parag1 {
-  min-width: 1200px;
   margin-top: 58px;
   font-weight: 420;
   font-size: 0.95rem;
+  width: 100%;
+  overflow-wrap: break-word;
 }
 .RM1 .bookSection2 {
-  width: 1464px;
-  height: 380px;
   display: flex;
   align-items: flex-start;
   margin: 0 auto;
   margin-top: 140px;
+  width: 100%;
+  max-width: 1464px;
+  padding: 10px;
 }
 .RM1 .bookSection2 .bookImg {
   background-image: url(../assets/findingme.jpg);
@@ -2000,21 +2006,26 @@ footer {
   background-size: cover;
   width: 250px;
   height: 380px;
+  padding: 10px;
+  flex-shrink: 0;
 }
 .RM1 .bookSection2 .info {
-  margin-left: 35px;
+  margin-left: 20px;
+  padding: 10px;
+  flex-grow: 1;
+  min-width: 0;
 }
 .RM1 .bookSection2 .info .bookTitle1 {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-family: Segoe UI;
   font-weight: bold;
 }
 .RM1 .bookSection2 .info .parag1 {
-  max-width: 1200px;
-  height: 100%;
   margin-top: 58px;
   font-weight: 420;
-  font-size: 15px;
+  font-size: 0.95rem;
+  width: 100%;
+  overflow-wrap: break-word;
 }
 
 @media (max-width: 768px) {
@@ -2172,7 +2183,7 @@ footer {
     margin: 0 auto;
     margin-top: 64px;
     position: relative;
-    margin-left: 40px;
+    margin-left: 22px;
   }
   .RM1 .bookSection1 .bookImg {
     width: 100%;
@@ -2180,7 +2191,7 @@ footer {
     max-width: 50px;
   }
   .RM1 .bookSection1 .info {
-    margin-left: 35px;
+    margin-left: 22px;
     width: 50%;
   }
   .RM1 .bookSection1 .info .bookTitle1 {
@@ -2207,7 +2218,7 @@ footer {
     align-items: flex-start;
     margin: 0 auto;
     position: relative;
-    margin-left: 40px;
+    margin-left: 22px;
   }
   .RM1 .bookSection2 .bookImg {
     width: 100%;
@@ -2215,7 +2226,7 @@ footer {
     max-width: 50px;
   }
   .RM1 .bookSection2 .info {
-    margin-left: 35px;
+    margin-left: 22px;
     width: 40%;
   }
   .RM1 .bookSection2 .info .bookTitle1 {
