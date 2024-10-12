@@ -7,6 +7,8 @@ function navListeners() {
   // });
   $("nav .hamburgerMenu").on("click", function (e) {
     console.log($("nav .mobileClickables").css("transform"));
+
+    $("nav .mobileClickables").css("transition-duration", "0.2s");
     if ($("nav .mobileClickables").css("transform")[16] == "0") {
       $("nav .mobileClickables").css("transform", "translateY(100%) scaleY(100%)");
     } else {
