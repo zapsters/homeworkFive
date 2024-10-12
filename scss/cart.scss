@@ -1,0 +1,128 @@
+.cart {
+  margin-top: 152px;
+  .cartItem:nth-of-type(2) .cover {
+    background-image: url("/assets/mlk-biography.jpg");
+  }
+  .cartItem {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 22px;
+    padding-left: min(8vw, 135px);
+    padding-right: min(8vw, 135px);
+    margin: 97px 0px;
+    padding-bottom: 97px;
+    border-bottom: 1px black solid;
+    .cover {
+      aspect-ratio: 205 / 317;
+      max-width: 205px;
+      flex: 1;
+      background-color: red;
+      background-image: url("/assets/misery.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .details {
+      flex: 1;
+      margin-top: 9px;
+      h2 {
+        font-weight: 700;
+        font-size: 16px;
+        margin-bottom: 17px;
+      }
+      h3 {
+        font-weight: 700;
+        font-size: 16px;
+        margin-bottom: 4px;
+      }
+      span {
+        font-size: 16px;
+      }
+      .quantity {
+        gap: 7px;
+        margin-top: 43px;
+        font-size: 16px;
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        a {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+/* Tablet Breakpoint MediaQuery */
+@media (max-width: $breakpoint-tablet) {
+  .cart {
+    margin: 0;
+    .cartItem {
+      gap: 45px;
+      margin-top: 45px;
+      margin-bottom: 45px;
+      padding-left: 64px;
+      padding-left: min(9vw, 64px);
+      padding-bottom: 45px;
+      .cover {
+        max-width: 69px;
+      }
+      .details {
+        h2 {
+          font-size: 12px;
+          margin-bottom: 14px;
+        }
+        h3 {
+          margin-bottom: 10px;
+          font-size: 12px;
+        }
+        span {
+          font-size: 12px;
+        }
+        .quantity {
+          margin-top: 10px;
+          font-size: 11px;
+          gap: 17px;
+        }
+      }
+    }
+  }
+}
+
+/* Mobile Breakpoint MediaQuery */
+@media (max-width: $breakpoint-mobile) {
+  .cart {
+    margin: 0;
+    .cartItem {
+      gap: 22px;
+      margin-top: 26px;
+      margin-bottom: 26px;
+      padding-left: 21px;
+      padding-bottom: 26px;
+      .cover {
+        max-width: 48px;
+      }
+      .details {
+        h2 {
+          font-size: 6px;
+          margin-bottom: 8px;
+        }
+        h3 {
+          margin-bottom: 8px;
+          font-size: 6px;
+        }
+        span {
+          font-size: 6px;
+        }
+        .quantity {
+          margin-top: 8px;
+          font-size: 6px;
+          gap: 5px;
+        }
+      }
+    }
+  }
+}
