@@ -1,0 +1,166 @@
+.RM3 {
+  height: 2095px;
+
+  .hero1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(
+        rgba(88, 124, 131, 0.6),
+        rgba(88, 124, 131, 0.6)
+      ),
+      url(../assets/eread-hero.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: solid 1px #707070;
+    width: 100%;
+    max-width: 1464px;
+    height: 463px;
+    margin: 0 auto;
+    margin-top: 140px;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+
+    .title {
+      font-family: Segoe UI;
+      font-weight: bold;
+      font-size: 28px;
+      text-transform: uppercase;
+      color: white;
+      margin-top: -20px;
+      margin-bottom: 26px;
+    }
+    .subhead2 {
+      color: white;
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+  }
+
+  .infoSection {
+    width: 100%;
+    height: auto;
+    max-width: 1464px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 105px;
+
+    .bookImg {
+      flex: 1;
+      background-image: url(../assets/ereading-blog.jpg);
+      max-width: 622px;
+      height: auto;
+      aspect-ratio: 622 / 463;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border: solid 1px #707070;
+    }
+
+    .infoPGS {
+      max-width: 50%;
+      height: auto;
+      overflow: auto;
+      font-size: 1rem;
+      line-height: 1.5;
+      padding: 10px;
+    }
+  }
+}
+@media (max-width: 786px) {
+  .RM3 {
+    height: 800px;
+    overflow: hidden;
+
+    .hero1 {
+      height: 196px;
+      margin-top: 63px;
+      width: 539px;
+
+      .title {
+        font-size: 12px;
+      }
+      .subhead2 {
+        font-size: 0.7rem;
+      }
+    }
+
+    .infoSection {
+      width: 565px;
+      height: 350px;
+      margin-top: 83px;
+      gap: min(calc(8vw), 44px);
+
+      .bookImg {
+        max-width: 260px;
+        aspect-ratio: 260 / 205;
+      }
+      .infoPGS {
+        max-width: 261px;
+        height: 285px;
+        font-size: 11px;
+
+        .disappearText {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  .RM3 {
+    height: 844px;
+
+    .hero1 {
+      width: 307px;
+      height: 121px;
+      max-width: 100%;
+      margin: 0 auto;
+      margin-top: 63px;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+
+      .title {
+        font-size: 6px;
+        line-height: 1.2; /* Increase line height */
+      }
+      .subhead2 {
+        color: white;
+        font-weight: bold;
+        font-size: 0.4rem;
+      }
+    }
+
+    .infoSection {
+      width: 400px;
+      height: auto;
+      margin-top: 50px;
+      gap: min(calc(8vw), 44px);
+      overflow: hidden;
+      margin-left: 20px;
+
+      .bookImg {
+        max-width: 114px;
+        aspect-ratio: 114 / 95;
+        height: 95px;
+      }
+      .infoPGS {
+        max-width: 158px;
+        height: 447px;
+        font-size: 6px;
+
+        .disappearText {
+          display: block;
+        }
+      }
+    }
+  }
+}

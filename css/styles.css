@@ -280,7 +280,6 @@ nav .hamburgerMenu img {
 
 /* Tablet Breakpoint MediaQuery */
 @media (max-width: 768px) {
-@media (max-width: 768px) {
   nav {
     padding: 22px 2.5vw 0 2.5vw;
     position: relative;
@@ -1784,5 +1783,626 @@ footer {
   }
   .blog .section3 .details3 .readMoreButton:active {
     background-color: rgb(192, 188, 188);
+  }
+}
+.RM1 {
+  height: 2095px;
+}
+.RM1 .hero1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-image: linear-gradient(rgba(88, 124, 131, 0.6), rgba(88, 124, 131, 0.6)), url(../assets/february-favorites-hero.jpg);
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: solid 1px #707070;
+  width: 1464px;
+  height: 463px;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: 140px;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.RM1 .hero1 .title {
+  font-family: Segoe UI;
+  font-weight: bold;
+  font-size: 32px;
+  text-transform: uppercase;
+  color: white;
+  margin-top: -20px;
+  margin-bottom: 58px;
+}
+.RM1 .hero1 .subhead {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 58px;
+}
+.RM1 .hero1 .subhead2 {
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.RM1 .bookSection1 {
+  width: 1464px;
+  height: 380px;
+  display: flex;
+  align-items: flex-start;
+  margin: 0 auto;
+  margin-top: 140px;
+  position: relative;
+}
+.RM1 .bookSection1 .bookImg {
+  background-image: url(../assets/becoming.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 70%;
+  height: 380px;
+  max-width: 250px;
+}
+.RM1 .bookSection1 .info {
+  margin-left: 35px;
+}
+.RM1 .bookSection1 .info .bookTitle1 {
+  font-size: 1.25rem;
+  font-family: Segoe UI;
+  font-weight: bold;
+}
+.RM1 .bookSection1 .info .parag1 {
+  min-width: 1200px;
+  margin-top: 58px;
+  font-weight: 420;
+  font-size: 0.95rem;
+}
+.RM1 .bookSection2 {
+  width: 1464px;
+  height: 380px;
+  display: flex;
+  align-items: flex-start;
+  margin: 0 auto;
+  margin-top: 140px;
+}
+.RM1 .bookSection2 .bookImg {
+  background-image: url(../assets/findingme.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 250px;
+  height: 380px;
+}
+.RM1 .bookSection2 .info {
+  margin-left: 35px;
+}
+.RM1 .bookSection2 .info .bookTitle1 {
+  font-size: 20px;
+  font-family: Segoe UI;
+  font-weight: bold;
+}
+.RM1 .bookSection2 .info .parag1 {
+  max-width: 1200px;
+  height: 100%;
+  margin-top: 58px;
+  font-weight: 420;
+  font-size: 15px;
+}
+
+@media (max-width: 768px) {
+  .RM1 {
+    height: 1000px;
+  }
+  .RM1 .hero1 {
+    width: 562px;
+    height: 197px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 140px;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .RM1 .hero1 .title {
+    font-family: Segoe UI;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 25px;
+  }
+  .RM1 .hero1 .subhead {
+    color: white;
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin-bottom: 21px;
+  }
+  .RM1 .hero1 .subhead2 {
+    color: white;
+    font-weight: bold;
+    font-size: 0.5rem;
+  }
+  .RM1 .bookSection1 {
+    width: 602px;
+    height: 168px;
+    display: flex;
+    align-items: flex-start;
+    margin: 0 auto;
+    margin-top: 81px;
+    position: relative;
+  }
+  .RM1 .bookSection1 .bookImg {
+    background-image: url(../assets/becoming.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 150px;
+    max-width: 99px;
+  }
+  .RM1 .bookSection1 .info {
+    margin-left: 35px;
+    width: 100%;
+  }
+  .RM1 .bookSection1 .info .bookTitle1 {
+    font-size: 0.9rem;
+    font-family: Segoe UI;
+    font-weight: bold;
+    margin-top: -30px;
+  }
+  .RM1 .bookSection1 .info .parag1 {
+    min-width: 467px;
+    margin-top: 38px;
+    font-weight: 420;
+    font-size: 0.8rem;
+    font-weight: 550;
+  }
+  .RM1 .bookSection1 .info .parag1 .secondpg {
+    display: none;
+  }
+  .RM1 .bookSection2 {
+    width: 602px;
+    height: 168px;
+    display: flex;
+    align-items: flex-start;
+    margin: 0 auto;
+    margin-top: 81px;
+    position: relative;
+  }
+  .RM1 .bookSection2 .bookImg {
+    background-image: url(../assets/findingme.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 145px;
+    max-width: 96px;
+    margin-top: 81px;
+  }
+  .RM1 .bookSection2 .info {
+    margin-left: 35px;
+    width: 100%;
+    margin-top: 81px;
+  }
+  .RM1 .bookSection2 .info .bookTitle1 {
+    font-size: 0.9rem;
+    font-family: Segoe UI;
+    font-weight: bold;
+    margin-top: -30px;
+  }
+  .RM1 .bookSection2 .info .parag1 {
+    min-width: 467px;
+    margin-top: 38px;
+    font-weight: 420;
+    font-size: 0.8rem;
+    font-weight: 550;
+  }
+  .RM1 .bookSection2 .info .parag1 .secondpg {
+    display: none;
+  }
+}
+@media (max-width: 390px) {
+  .RM1 {
+    height: 844px;
+  }
+  .RM1 .hero1 {
+    width: 310px;
+    height: 119px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 140px;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .RM1 .hero1 .title {
+    font-family: Segoe UI;
+    font-weight: bold;
+    font-size: 6px;
+    text-transform: uppercase;
+    color: white;
+    margin-top: -30px;
+    margin-bottom: 16px;
+  }
+  .RM1 .hero1 .subhead {
+    color: white;
+    font-weight: bold;
+    font-size: 0.4rem;
+    margin-bottom: 16px;
+  }
+  .RM1 .hero1 .subhead2 {
+    color: white;
+    font-weight: bold;
+    font-size: 0.4rem;
+  }
+  .RM1 .bookSection1 {
+    width: 228px;
+    height: 110px;
+    display: flex;
+    align-items: flex-start;
+    margin: 0 auto;
+    margin-top: 64px;
+    position: relative;
+    margin-left: 40px;
+  }
+  .RM1 .bookSection1 .bookImg {
+    width: 100%;
+    height: 76px;
+    max-width: 50px;
+  }
+  .RM1 .bookSection1 .info {
+    margin-left: 35px;
+    width: 50%;
+  }
+  .RM1 .bookSection1 .info .bookTitle1 {
+    font-size: 0.5rem;
+    font-family: Segoe UI;
+    font-weight: bold;
+    margin-top: -10px;
+  }
+  .RM1 .bookSection1 .info .parag1 {
+    min-width: 219px;
+    height: 85px;
+    margin-top: 17px;
+    font-weight: 420;
+    font-size: 0.4rem;
+    font-weight: 550;
+  }
+  .RM1 .bookSection1 .info .parag1 .secondpg {
+    display: none;
+  }
+  .RM1 .bookSection2 {
+    width: 228px;
+    height: 110px;
+    display: flex;
+    align-items: flex-start;
+    margin: 0 auto;
+    position: relative;
+    margin-left: 40px;
+  }
+  .RM1 .bookSection2 .bookImg {
+    width: 100%;
+    height: 76px;
+    max-width: 50px;
+  }
+  .RM1 .bookSection2 .info {
+    margin-left: 35px;
+    width: 40%;
+  }
+  .RM1 .bookSection2 .info .bookTitle1 {
+    font-size: 0.52rem;
+    font-family: Segoe UI;
+    font-weight: bold;
+    margin-top: -10px;
+    width: 150px;
+  }
+  .RM1 .bookSection2 .info .parag1 {
+    min-width: 219px;
+    height: 85px;
+    margin-top: 17px;
+    font-weight: 420;
+    font-size: 0.4rem;
+    font-weight: 550;
+  }
+  .RM1 .bookSection2 .info .parag1 .secondpg {
+    display: none;
+  }
+}
+.RM2 {
+  height: 2095px;
+}
+.RM2 .hero1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(rgba(88, 124, 131, 0.6), rgba(88, 124, 131, 0.6)), url(../assets/book-club-hero.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: solid 1px #707070;
+  width: 100%;
+  max-width: 1464px;
+  height: 463px;
+  margin: 0 auto;
+  margin-top: 140px;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+}
+.RM2 .hero1 .title {
+  font-family: Segoe UI;
+  font-weight: bold;
+  font-size: 32px;
+  text-transform: uppercase;
+  color: white;
+  margin-top: -20px;
+  margin-bottom: 26px;
+}
+.RM2 .hero1 .subhead2 {
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.RM2 .infoSection {
+  width: 100%;
+  height: auto;
+  max-width: 1464px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  gap: 20px;
+  padding: 20px;
+  margin-top: 105px;
+}
+.RM2 .infoSection .bookImg {
+  flex: 1;
+  background-image: url(../assets/open-book-blog.jpg);
+  max-width: 622px;
+  height: auto;
+  aspect-ratio: 622/463;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: solid 1px #707070;
+}
+.RM2 .infoSection .infoPGS {
+  max-width: 50%;
+  height: auto;
+  overflow: auto;
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 10px;
+}
+
+@media (max-width: 786px) {
+  .RM2 {
+    height: 800px;
+    overflow: hidden;
+  }
+  .RM2 .hero1 {
+    height: 196px;
+    margin-top: 63px;
+    width: 539px;
+    padding: 20px;
+  }
+  .RM2 .hero1 .title {
+    font-size: 12px;
+  }
+  .RM2 .hero1 .subhead2 {
+    font-size: 0.7rem;
+  }
+  .RM2 .infoSection {
+    width: 565px;
+    height: 350px;
+    margin-top: 83px;
+    gap: min(8vw, 44px);
+  }
+  .RM2 .infoSection .bookImg {
+    max-width: 260px;
+    aspect-ratio: 260/205;
+  }
+  .RM2 .infoSection .infoPGS {
+    max-width: 261px;
+    height: 285px;
+    font-size: 11px;
+  }
+  .RM2 .infoSection .infoPGS .disappearText {
+    display: none;
+  }
+}
+@media (max-width: 390px) {
+  .RM2 {
+    height: 844px;
+  }
+  .RM2 .hero1 {
+    width: 307px;
+    height: 121px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 63px;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .RM2 .hero1 .title {
+    font-size: 6px;
+    line-height: 1.2; /* Increase line height */
+  }
+  .RM2 .hero1 .subhead2 {
+    color: white;
+    font-weight: bold;
+    font-size: 0.4rem;
+  }
+  .RM2 .infoSection {
+    width: 400px;
+    height: auto;
+    margin-top: 50px;
+    gap: min(8vw, 44px);
+    overflow: hidden;
+    margin-left: 20px;
+  }
+  .RM2 .infoSection .bookImg {
+    max-width: 114px;
+    aspect-ratio: 114/95;
+    height: 95px;
+  }
+  .RM2 .infoSection .infoPGS {
+    max-width: 158px;
+    height: 447px;
+    font-size: 6px;
+  }
+  .RM2 .infoSection .infoPGS .disappearText {
+    display: block;
+  }
+}
+.RM3 {
+  height: 2095px;
+}
+.RM3 .hero1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(rgba(88, 124, 131, 0.6), rgba(88, 124, 131, 0.6)), url(../assets/eread-hero.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: solid 1px #707070;
+  width: 100%;
+  max-width: 1464px;
+  height: 463px;
+  margin: 0 auto;
+  margin-top: 140px;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+}
+.RM3 .hero1 .title {
+  font-family: Segoe UI;
+  font-weight: bold;
+  font-size: 28px;
+  text-transform: uppercase;
+  color: white;
+  margin-top: -20px;
+  margin-bottom: 26px;
+}
+.RM3 .hero1 .subhead2 {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.RM3 .infoSection {
+  width: 100%;
+  height: auto;
+  max-width: 1464px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  gap: 20px;
+  padding: 20px;
+  margin-top: 105px;
+}
+.RM3 .infoSection .bookImg {
+  flex: 1;
+  background-image: url(../assets/ereading-blog.jpg);
+  max-width: 622px;
+  height: auto;
+  aspect-ratio: 622/463;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: solid 1px #707070;
+}
+.RM3 .infoSection .infoPGS {
+  max-width: 50%;
+  height: auto;
+  overflow: auto;
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 10px;
+}
+
+@media (max-width: 786px) {
+  .RM3 {
+    height: 800px;
+    overflow: hidden;
+  }
+  .RM3 .hero1 {
+    height: 196px;
+    margin-top: 63px;
+    width: 539px;
+  }
+  .RM3 .hero1 .title {
+    font-size: 12px;
+  }
+  .RM3 .hero1 .subhead2 {
+    font-size: 0.7rem;
+  }
+  .RM3 .infoSection {
+    width: 565px;
+    height: 350px;
+    margin-top: 83px;
+    gap: min(8vw, 44px);
+  }
+  .RM3 .infoSection .bookImg {
+    max-width: 260px;
+    aspect-ratio: 260/205;
+  }
+  .RM3 .infoSection .infoPGS {
+    max-width: 261px;
+    height: 285px;
+    font-size: 11px;
+  }
+  .RM3 .infoSection .infoPGS .disappearText {
+    display: none;
+  }
+}
+@media (max-width: 390px) {
+  .RM3 {
+    height: 844px;
+  }
+  .RM3 .hero1 {
+    width: 307px;
+    height: 121px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 63px;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .RM3 .hero1 .title {
+    font-size: 6px;
+    line-height: 1.2; /* Increase line height */
+  }
+  .RM3 .hero1 .subhead2 {
+    color: white;
+    font-weight: bold;
+    font-size: 0.4rem;
+  }
+  .RM3 .infoSection {
+    width: 400px;
+    height: auto;
+    margin-top: 50px;
+    gap: min(8vw, 44px);
+    overflow: hidden;
+    margin-left: 20px;
+  }
+  .RM3 .infoSection .bookImg {
+    max-width: 114px;
+    aspect-ratio: 114/95;
+    height: 95px;
+  }
+  .RM3 .infoSection .infoPGS {
+    max-width: 158px;
+    height: 447px;
+    font-size: 6px;
+  }
+  .RM3 .infoSection .infoPGS .disappearText {
+    display: block;
   }
 }

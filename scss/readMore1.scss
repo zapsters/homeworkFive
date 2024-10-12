@@ -1,0 +1,352 @@
+.RM1 {
+  height: 2095px;
+
+  .hero1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-image: linear-gradient(
+        rgba(88, 124, 131, 0.6),
+        rgba(88, 124, 131, 0.6)
+      ),
+      url(../assets/february-favorites-hero.jpg);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: solid 1px #707070;
+    width: 1464px;
+    height: 463px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 140px;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+    .title {
+      font-family: Segoe UI;
+      font-weight: bold;
+      font-size: 32px;
+      text-transform: uppercase;
+      color: white;
+      margin-top: -20px;
+      margin-bottom: 58px;
+    }
+    .subhead {
+      color: white;
+      font-weight: bold;
+      font-size: 1.5rem;
+      margin-bottom: 58px;
+    }
+    .subhead2 {
+      color: white;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+  }
+
+  .bookSection1 {
+    width: 1464px;
+    height: 380px;
+    display: flex;
+    align-items: flex-start;
+    margin: 0 auto;
+    margin-top: 140px;
+    position: relative;
+
+    .bookImg {
+      background-image: url(../assets/becoming.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 70%;
+      height: 380px;
+      max-width: 250px;
+    }
+    .info {
+      margin-left: 35px;
+      .bookTitle1 {
+        font-size: 1.25rem;
+        font-family: Segoe UI;
+        font-weight: bold;
+      }
+      .parag1 {
+        min-width: 1200px;
+        margin-top: 58px;
+        font-weight: 420;
+        font-size: 0.95rem;
+      }
+    }
+  }
+
+  .bookSection2 {
+    width: 1464px;
+    height: 380px;
+    display: flex;
+    align-items: flex-start;
+    margin: 0 auto;
+    margin-top: 140px;
+
+    .bookImg {
+      background-image: url(../assets/findingme.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 250px;
+      height: 380px;
+    }
+    .info {
+      margin-left: 35px;
+      .bookTitle1 {
+        font-size: 20px;
+        font-family: Segoe UI;
+        font-weight: bold;
+      }
+      .parag1 {
+        max-width: 1200px;
+        height: 100%;
+        margin-top: 58px;
+        font-weight: 420;
+        font-size: 15px;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .RM1 {
+    height: 1000px;
+    .hero1 {
+      width: 562px;
+      height: 197px;
+      max-width: 100%;
+      margin: 0 auto;
+      margin-top: 140px;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+
+      .title {
+        font-family: Segoe UI;
+        font-weight: bold;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: white;
+        margin-top: 0px;
+        margin-bottom: 25px;
+      }
+      .subhead {
+        color: white;
+        font-weight: bold;
+        font-size: 0.8rem;
+        margin-bottom: 21px;
+      }
+      .subhead2 {
+        color: white;
+        font-weight: bold;
+        font-size: 0.5rem;
+      }
+    }
+
+    .bookSection1 {
+      width: 602px;
+      height: 168px;
+      display: flex;
+      align-items: flex-start;
+      margin: 0 auto;
+      margin-top: 81px;
+      position: relative;
+
+      .bookImg {
+        background-image: url(../assets/becoming.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 50%;
+        height: 150px;
+        max-width: 99px;
+      }
+      .info {
+        margin-left: 35px;
+        width: 100%;
+
+        .bookTitle1 {
+          font-size: 0.9rem;
+          font-family: Segoe UI;
+          font-weight: bold;
+          margin-top: -30px;
+        }
+        .parag1 {
+          min-width: 467px;
+          margin-top: 38px;
+          font-weight: 420;
+          font-size: 0.8rem;
+          font-weight: 550;
+
+          .secondpg {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .bookSection2 {
+      width: 602px;
+      height: 168px;
+      display: flex;
+      align-items: flex-start;
+      margin: 0 auto;
+      margin-top: 81px;
+      position: relative;
+
+      .bookImg {
+        background-image: url(../assets/findingme.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 50%;
+        height: 145px;
+        max-width: 96px;
+        margin-top: 81px;
+      }
+      .info {
+        margin-left: 35px;
+        width: 100%;
+        margin-top: 81px;
+
+        .bookTitle1 {
+          font-size: 0.9rem;
+          font-family: Segoe UI;
+          font-weight: bold;
+          margin-top: -30px;
+        }
+        .parag1 {
+          min-width: 467px;
+          margin-top: 38px;
+          font-weight: 420;
+          font-size: 0.8rem;
+          font-weight: 550;
+          .secondpg {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 390px) {
+  .RM1 {
+    height: 844px;
+    .hero1 {
+      width: 310px;
+      height: 119px;
+      max-width: 100%;
+      margin: 0 auto;
+      margin-top: 140px;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+
+      .title {
+        font-family: Segoe UI;
+        font-weight: bold;
+        font-size: 6px;
+        text-transform: uppercase;
+        color: white;
+        margin-top: -30px;
+        margin-bottom: 16px;
+      }
+      .subhead {
+        color: white;
+        font-weight: bold;
+        font-size: 0.4rem;
+        margin-bottom: 16px;
+      }
+      .subhead2 {
+        color: white;
+        font-weight: bold;
+        font-size: 0.4rem;
+      }
+    }
+
+    .bookSection1 {
+      width: 228px;
+      height: 110px;
+      display: flex;
+      align-items: flex-start;
+      margin: 0 auto;
+      margin-top: 64px;
+      position: relative;
+      margin-left: 40px;
+
+      .bookImg {
+        width: 100%;
+        height: 76px;
+        max-width: 50px;
+      }
+      .info {
+        margin-left: 35px;
+        width: 50%;
+
+        .bookTitle1 {
+          font-size: 0.5rem;
+          font-family: Segoe UI;
+          font-weight: bold;
+          margin-top: -10px;
+        }
+        .parag1 {
+          min-width: 219px;
+          height: 85px;
+          margin-top: 17px;
+          font-weight: 420;
+          font-size: 0.4rem;
+          font-weight: 550;
+
+          .secondpg {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .bookSection2 {
+      width: 228px;
+      height: 110px;
+      display: flex;
+      align-items: flex-start;
+      margin: 0 auto;
+      position: relative;
+      margin-left: 40px;
+
+      .bookImg {
+        width: 100%;
+        height: 76px;
+        max-width: 50px;
+      }
+      .info {
+        margin-left: 35px;
+        width: 40%;
+
+        .bookTitle1 {
+          font-size: 0.52rem;
+          font-family: Segoe UI;
+          font-weight: bold;
+          margin-top: -10px;
+          width: 150px;
+        }
+        .parag1 {
+          min-width: 219px;
+          height: 85px;
+          margin-top: 17px;
+          font-weight: 420;
+          font-size: 0.4rem;
+          font-weight: 550;
+
+          .secondpg {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
